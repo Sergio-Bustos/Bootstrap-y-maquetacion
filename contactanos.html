@@ -1,226 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactanos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body>
-  
-    <!--Barra de navegacion: -->
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a style="color: rgb(119, 0, 255);" class="navbar-brand" href="bienvenida.html">ReposteryFlow</a>
+      <button style="color: rgb(119, 0, 255);" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contactanos.html">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito de compras</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas sobre nosotros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="patrocinadores.html">Patrocinadores</a></li>
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
 
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a style="color: rgb(119, 0, 255);" class="navbar-brand" href="bienvenida.html">ReposteryFlow</a>
-    <button style="color: rgb(119, 0, 255);" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="contactanos.html">Contactanos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="carrito.html">Carrito de compras</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas sobre nosotros
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="patrocinadores.html">Patrocinadores</a></li>
-            <li><a class="dropdown-item" href="historia.html">Historia</a></li>
-          </ul>
-        </li>
-      </ul>
+  <div class="bg-gradient text-white py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container text-center">
+      <h1 class="display-3 fw-bold mb-3">Contáctanos</h1>
+      <p class="lead fs-4">Completa el formulario y te responderemos pronto</p>
     </div>
   </div>
-</nav>
-<br>
-<br>
-<div class="container mt-4">
 
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="card shadow-lg border-0">
+          <div class="card-header bg-primary text-white py-3">
+            <h4 class="mb-0 fw-bold">Formulario de Contacto</h4>
+          </div>
+          <div class="card-body p-4">
+            <form>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Nombre Completo <span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-lg" placeholder="Pepito Andrés" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Apellido <span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-lg" placeholder="Díaz Salazar" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Correo Electrónico <span class="text-danger">*</span></label>
+                <input type="email" class="form-control form-control-lg" placeholder="ejemplo@correo.com" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Teléfono <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control form-control-lg" placeholder="300 123 4567" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Fecha de Nacimiento <span class="text-danger">*</span></label>
+                <input type="date" class="form-control form-control-lg" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Tipo de Documento <span class="text-danger">*</span></label>
+                <select class="form-select form-select-lg" required>
+                  <option selected disabled>Selecciona...</option>
+                  <option>Registro Civil (R.C)</option>
+                  <option>Tarjeta de Identidad (T.I)</option>
+                  <option>Cédula de Ciudadanía (C.C)</option>
+                  <option>Cédula de Extranjería (C.E)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Número de Identificación <span class="text-danger">*</span></label>
+                <input type="number" class="form-control form-control-lg" placeholder="941275809" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Mensaje / Pedido <span class="text-danger">*</span></label>
+                <textarea class="form-control" rows="5" placeholder="Cuéntanos qué producto te interesa..." required></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-bold">Adjunta una foto (opcional)</label>
+                <input class="form-control" type="file" accept="image/*">
+                <small class="form-text text-muted">Si quieres un diseño específico, adjunta imagen</small>
+              </div>
+              <div class="card bg-light mb-3">
+                <div class="card-body">
+                  <p class="fw-bold mb-2">¿Verificaste que tus datos sean correctos?</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="verificacion" id="si">
+                    <label class="form-check-label" for="si">✅ Sí, todo está correcto</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="verificacion" id="no" checked>
+                    <label class="form-check-label" for="no">❌ No, los corregiré</label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-grid">
+                <a href="enviado.html" class="btn btn-primary btn-lg">📤 Enviar Mensaje</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-        <!-- Título -->
-        <div class="text-center mb-5">
-            <h1 class="display-4 text-primary">📞 Contáctanos</h1>
-            <p class="lead text-muted">Completa el formulario y nos pondremos en contacto contigo</p>
+      <div class="col-lg-4">
+        <div class="card shadow-lg border-0 mb-4">
+          <div class="card-header bg-info text-white py-3">
+            <h5 class="mb-0 fw-bold">📍 Información</h5>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <h6 class="fw-bold">📧 Email</h6>
+              <p>contacto@reposteryflow.com</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="fw-bold">📱 WhatsApp</h6>
+              <p>+57 300 123 4567</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="fw-bold">🕐 Horario</h6>
+              <p>Lun-Vie: 8am-6pm<br>Sáb: 9am-2pm</p>
+            </div>
+            <div>
+              <h6 class="fw-bold">📍 Ubicación</h6>
+              <p>SENA - Palmira<br>Valle del Cauca</p>
+            </div>
+          </div>
         </div>
 
-        <div class="row g-4">
-            <!-- Columna del formulario -->
-            <div class="col-lg-8">
-                <div class="card shadow">
-                    <div class="card-header bg-primary text-white">
-                        <h4 class="mb-0">Formulario de Contacto</h4>
-                    </div>
-                    <div class="card-body p-4">
-                        <form>
-                            <!-- Nombre -->
-                            <div class="mb-3">
-                                <label for="nombre" class="form-label fw-bold">
-                                    Nombre Completo <span class="text-danger">*</span>
-                                </label>
-                                <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Pepito Andrés" required>
-                                <div class="form-text">Ingresa tu nombre completo</div>
-                            </div>
-
-                            <!-- Apellido -->
-                            <div class="mb-3">
-                                <label for="apellido" class="form-label fw-bold">
-                                    Apellido <span class="text-danger">*</span>
-                                </label>
-                                <input type="text" class="form-control form-control-lg" id="apellido" placeholder="Díaz Salazar" required>
-                                <div class="form-text">Ingresa tu apellido</div>
-                            </div>
-
-                            <!-- Email -->
-                            <div class="mb-3">
-                                <label for="email" class="form-label fw-bold">
-                                    Correo Electrónico <span class="text-danger">*</span>
-                                </label>
-                                <input type="email" class="form-control form-control-lg" id="email" placeholder="ejemplo@correo.com" required>
-                                <div class="form-text">Te contactaremos a este email</div>
-                            </div>
-
-                            <!-- Teléfono -->
-                            <div class="mb-3">
-                                <label for="telefono" class="form-label fw-bold">
-                                    Teléfono <span class="text-danger">*</span>
-                                </label>
-                                <input type="tel" class="form-control form-control-lg" id="telefono" placeholder="300 123 4567" required>
-                                <div class="form-text">Número de contacto</div>
-                            </div>
-
-                            <!-- Fecha de nacimiento -->
-                            <div class="mb-3">
-                                <label for="fecha" class="form-label fw-bold">
-                                    Fecha de Nacimiento <span class="text-danger">*</span>
-                                </label>
-                                <input type="date" class="form-control form-control-lg" id="fecha" required>
-                            </div>
-
-                            <!-- Tipo de documento -->
-                            <div class="mb-3">
-                                <label for="tipoDoc" class="form-label fw-bold">
-                                    Tipo de Documento <span class="text-danger">*</span>
-                                </label>
-                                <select class="form-select form-select-lg" id="tipoDoc" required>
-                                    <option selected disabled>Selecciona tu tipo de documento</option>
-                                    <option value="RC">Registro Civil (R.C)</option>
-                                    <option value="TI">Tarjeta de Identidad (T.I)</option>
-                                    <option value="CC">Cédula de Ciudadanía (C.C)</option>
-                                    <option value="CE">Cédula de Extranjería (C.E)</option>
-                                </select>
-                            </div>
-
-                            <!-- Número de documento -->
-                            <div class="mb-3">
-                                <label for="numDoc" class="form-label fw-bold">
-                                    Número de Identificación <span class="text-danger">*</span>
-                                </label>
-                                <input type="number" class="form-control form-control-lg" id="numDoc" placeholder="941275809" required>
-                            </div>
-
-                            <!-- Mensaje -->
-                            <div class="mb-3">
-                                <label for="mensaje" class="form-label fw-bold">
-                                    Mensaje / Pedido <span class="text-danger">*</span>
-                                </label>
-                                <textarea class="form-control" id="mensaje" rows="5" placeholder="Cuéntanos qué producto te interesa o cualquier consulta que tengas..." required></textarea>
-                                <div class="form-text">Describe tu pedido o consulta</div>
-                            </div>
-
-                            <!-- Adjuntar foto -->
-                            <div class="mb-4">
-                                <label for="foto" class="form-label fw-bold">Adjunta una foto (opcional)</label>
-                                <input class="form-control" type="file" id="foto" accept="image/*">
-                                <div class="form-text">Si quieres un diseño específico, adjunta una imagen de referencia</div>
-                            </div>
-
-                            <!-- Verificación -->
-                            <div class="card bg-light mb-3">
-                                <div class="card-body">
-                                    <p class="fw-bold mb-2">¿Verificaste que tus datos sean correctos?</p>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="verificacion" id="si" value="si">
-                                        <label class="form-check-label" for="si">
-                                            ✅ Sí, todo está correcto
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="verificacion" id="no" value="no" checked>
-                                        <label class="form-check-label" for="no">
-                                            ❌ No, los corregiré
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Botón de envío -->
-                            <div class="d-grid">
-                                <a href="enviado.html" class="btn btn-primary btn-lg">
-                                    📤 Enviar Mensaje
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Columna de información -->
-            <div class="col-lg-4">
-                <!-- Info de contacto -->
-                <div class="card shadow mb-4">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="mb-0">📍 Información</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <h6 class="fw-bold">📧 Email</h6>
-                            <p class="mb-0">contacto@reposteryflow.com</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">📱 WhatsApp</h6>
-                            <p class="mb-0">+57 300 123 4567</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">🕐 Horario</h6>
-                            <p class="mb-0">Lun - Vie: 8am - 6pm<br>Sáb: 9am - 2pm</p>
-                        </div>
-                        <div>
-                            <h6 class="fw-bold">📍 Ubicación</h6>
-                            <p class="mb-0">SENA - Centro de Formación<br>Palmira, Valle del Cauca</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Métodos de pago -->
-                <div class="card shadow">
-                    <div class="card-header bg-success text-white">
-                        <h5 class="mb-0">💳 Métodos de Pago</h5>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-2">✅ Nequi</li>
-                            <li class="mb-2">✅ Bancolombia</li>
-                            <li class="mb-2">✅ Efectivo</li>
-                            <li class="mb-0">✅ Contraentrega</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="card shadow-lg border-0">
+          <div class="card-header bg-success text-white py-3">
+            <h5 class="mb-0 fw-bold">💳 Métodos de Pago</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">✅ Nequi</li>
+              <li class="mb-2">✅ Bancolombia</li>
+              <li class="mb-2">✅ Efectivo</li>
+              <li>✅ Contraentrega</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <div class="container">
-            <p class="mb-2">© 2024 ReposteryFlow - SENA</p>
-            <p class="mb-0">Hecho con ❤️ por aprendices emprendedores</p>
-        </div>
-    </footer>
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-1">© 2024 ReposteryFlow - SENA</p>
+    <p class="mb-0">Hecho con ❤️ por aprendices emprendedores</p>
+  </footer>
+
 </body>
 </html>
